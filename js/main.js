@@ -2,8 +2,8 @@ $(function(){
   $('.advertising__inner').slick({
       dots: false,
       slidesToShow: 1,
-      prevArrow: "<img src='img/left_arrow.svg' class='prev' alt='1'>",
-      nextArrow: "<img src='img/right_arrow.svg' class='next' alt='2'>",
+      prevArrow: '<button type="button" class="prev"><img src="img/prev__arrow.svg" alt="1"  class="prev-icon"></button>',
+      nextArrow: '<button type="button" class="next"><img src="img/next__arrow.svg" alt="2"  class="next-icon"></button>',
       responsive: [
         {
             breakpoint: 767,
@@ -16,14 +16,19 @@ $(function(){
 
 });
 
-
 $(function(){
   $('.cities__inner').slick({
       dots: false,
       slidesToShow: 5,
-      prevArrow: "<img src='img/left_arrow.svg' class='prev__cities' alt='1'>",
-      nextArrow: "<img src='img/right_arrow.svg' class='next__cities' alt='2'>",
+      prevArrow: '<button type="button" class="prev__cities"><img src="img/prev__arrow.svg" alt="1"  class="prev-icon"></button>',
+      nextArrow: '<button type="button" class="next__cities"><img src="img/next__arrow.svg" alt="2"  class="next-icon"></button>',
       responsive: [
+        {
+            breakpoint: 1140,
+            settings:{
+                slidesToShow:4
+            }
+        },
       {
           breakpoint: 1040,
           settings:{
@@ -52,8 +57,8 @@ $(function(){
   $('.testimonials__inner').slick({
       dots: false,
       slidesToShow: 4,
-      prevArrow: "<img src='img/left_arrow.svg' class='prev__cities' alt='1'>",
-      nextArrow: "<img src='img/right_arrow.svg' class='next__cities' alt='2'>",
+      prevArrow: '<button type="button" class="prev__cities"><img src="img/prev__arrow.svg" alt="1"  class="prev-icon"></button>',
+      nextArrow: '<button type="button" class="next__cities"><img src="img/next__arrow.svg" alt="2"  class="next-icon"></button>',
       responsive: [
       {
           breakpoint: 1040,
@@ -79,20 +84,12 @@ $(function(){
 
 });
 
-
-
-
-
-
-
-
-
 $(function(){
     $('.carousel__inner').slick({
         dots: false,
         slidesToShow: 5,
-        prevArrow: "<img src='img/left_arrow.svg' class='prev__cities' alt='1'>",
-        nextArrow: "<img src='img/right_arrow.svg' class='next__cities' alt='2'>",
+        prevArrow: '<button type="button" class="prev__cities"><img src="img/prev__arrow.svg" alt="1"  class="prev-icon"></button>',
+      nextArrow: '<button type="button" class="next__cities"><img src="img/next__arrow.svg" alt="2"  class="next-icon"></button>',
         responsive: [
         {
             breakpoint: 1024,
@@ -123,8 +120,6 @@ $(function(){
   
   
   });
-
-
 
   $(function(){
     $('.header__burger').click(function(event){
